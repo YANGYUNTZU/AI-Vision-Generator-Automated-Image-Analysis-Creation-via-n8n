@@ -38,5 +38,3 @@
 ![n8n Workflow Demo]
 *圖：系統成功根據提示詞生成柯基犬在草原奔跑的影像。*
 
----
-Made with ❤️ by [Your Name]
