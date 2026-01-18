@@ -25,7 +25,7 @@
 ```text
 .
 ├── workflows/
-│   ├── image-generation-flow.json  # 圖片生成工作流
-│   └── image-analysis-flow.json    # 影像分析工作流
-├── assets/                         # 範例圖片與截圖
+│   ├── image-generation-flow  # 圖片生成工作流
+│   └── image-analysis-flow    # 影像分析工作流
+├── images/                    # 範例圖片與截圖
 └── README.md
