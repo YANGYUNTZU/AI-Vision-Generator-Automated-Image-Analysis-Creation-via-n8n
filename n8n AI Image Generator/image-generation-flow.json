@@ -1,0 +1,66 @@
+{
+  "name": "AI生成圖片",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        -336,
+        -48
+      ],
+      "id": "e2b80772-eee8-4f44-a4be-1ae53b310b49",
+      "name": "When chat message received",
+      "webhookId": "00e9317d-880b-48f0-b339-e6b293446bfa"
+    },
+    {
+      "parameters": {
+        "resource": "image",
+        "prompt": "={{ $json.chatInput }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        -128,
+        -48
+      ],
+      "id": "c760e063-a981-4950-a64d-e8d4062cb089",
+      "name": "Generate an image",
+      "credentials": {
+        "openAiApi": {
+          "id": "vtzEyuhGOiGfFPxQ",
+          "name": "OpenAi account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Generate an image",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "32f7e212-a548-4986-8328-16be604d30cd",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "5051b5a6e931bc26377d55a46a7dc4c1ad409ab4ed8993f1df5078d5bad0ee24"
+  },
+  "id": "d2XUNMsY4PjzlA_xZGSjz",
+  "tags": []
+}
