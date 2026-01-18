@@ -34,3 +34,9 @@
 graph LR
     A[🗨️ When chat message received] -- "chatInput" --> B[🤖 Generate an image<br/>OpenAI DALL-E 3]
     B --> C[🖼️ Image Output<br/>PNG Data]
+```
+
+## 📸 執行截圖範例
+
+![n8n AI Image Generation Demo](assets/your-screenshot-name.png)
+*圖：系統根據對話指令自動生成影像之實際畫面*
