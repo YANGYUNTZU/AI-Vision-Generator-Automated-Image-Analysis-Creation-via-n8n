@@ -1,34 +1,25 @@
-# AI Image Master: n8n Workflow Studio 🤖🎨
+# n8n AI 影像生成與圖片分析 🤖🎨
 
-這個專案包含了一套基於 **n8n** 構建的自動化工作流，整合了多種 AI 模型，實現「從文字到圖片生成」以及「影像視覺分析」的完整閉環。
+這個專案包含了一套基於 **n8n** ，整合AI 模型，實現「從文字到圖片生成」以及「影像視覺分析」的工作流程。
 
 
 
 ## 🌟 核心功能
 
-* **AI 圖片生成**：串接 OpenAI (DALL-E 3) 或 Midjourney API，根據輸入指令自動產出高品質影像。
-* **AI 視覺分析**：利用 GPT-4o 或 Claude 3.5 Vision 分析上傳圖片，提取標籤、描述或進行 OCR 文字識別。
-* **多平台整合**：支援透過 Telegram、Discord 或 Webhook 觸發任務並回傳結果。
-* **自動化存儲**：將生成的圖片與分析結果自動同步至 Google Drive 或資料庫。
+* **AI 圖片生成**：串接 OpenAI (DALL-E 3) ，根據輸入指令自動產出高品質影像。
+* **AI 視覺分析**：利用 GPT-4o mini分析上傳圖片，提取標籤、描述或進行文字識別。
 
 ## 🛠 技術堆棧
 
 * **Workflow Engine:** n8n
-* **AI Models:** * Image Gen: OpenAI DALL-E 3 / Stable Diffusion
-    * Analysis: OpenAI GPT-4o / Google Gemini Vision
-* **Storage/Apps:** Google Drive, Telegram Bot, Airtable (依你的實際狀況修改)
+* **AI Models:** * Image Gen: OpenAI DALL-E 3 
+* Analysis: OpenAI GPT-4o mini 
 
 ## 🚀 快速上手
 
 ### 前置準備
-1. 確保你已安裝並運行 [n8n](https://n8n.io/)。
+1. 確保你已安裝並運行 [n8n]。
 2. 準備相關 AI 平台的 API Keys (OpenAI, Anthropic 等)。
-
-### 安裝步驟
-1. 下載本專案中的 `.json` 工作流文件。
-2. 在 n8n 控制面板中點選 **"Import from File"**。
-3. 在節點中配置你的 **Credentials** (憑證)。
-4. 點擊 **"Execute Workflow"** 開始測試。
 
 ## 📂 專案結構
 ```text
