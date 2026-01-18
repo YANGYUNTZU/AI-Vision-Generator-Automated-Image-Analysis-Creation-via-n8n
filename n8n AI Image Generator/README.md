@@ -38,7 +38,8 @@ graph LR
 
 ## 📸 執行截圖範例
 
-![n8n AI Image Generation Demo](images/node.png)
-![n8n AI Image Generation Demo](images/openai_setting.png)
-![n8n AI Image Generation Demo](images/result.png)
+![工作流配置](images/node.png)
+![OpenAI 設定](images/openai_setting.png)
+![生成結果](images/result.png)
+
 *圖：系統根據對話指令自動生成影像之實際畫面*
