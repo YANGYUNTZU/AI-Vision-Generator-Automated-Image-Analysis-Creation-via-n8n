@@ -38,8 +38,8 @@ graph LR
 
 ## 📸 執行截圖範例
 
-![工作流配置](../images/node.png)
-![OpenAI 設定](../images/openai_setting.png)
-![生成結果](../images/result.png)
+![工作流配置](../images/generator_node.png)
+![OpenAI 設定](../images/generator_openai_setting.png)
+![生成結果](../images/generator_result.png)
 
 *圖：系統根據對話指令自動生成影像之實際畫面*
