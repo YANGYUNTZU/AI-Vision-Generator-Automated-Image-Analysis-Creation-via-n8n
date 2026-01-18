@@ -1,0 +1,77 @@
+{
+  "name": "AI分析圖片",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {
+          "allowFileUploads": true
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        -240,
+        -48
+      ],
+      "id": "36a4f772-6614-46ff-960b-baa82931178f",
+      "name": "When chat message received",
+      "webhookId": "3750573d-041c-445a-8bd5-4b42c09af38b"
+    },
+    {
+      "parameters": {
+        "resource": "image",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4o-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4O-MINI"
+        },
+        "text": "= {{ $json.chatInput }}",
+        "inputType": "base64",
+        "binaryPropertyName": "data0",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        -32,
+        -48
+      ],
+      "id": "80a4734e-6eb0-49c5-896c-d6b5e7b0c55d",
+      "name": "Analyze image",
+      "credentials": {
+        "openAiApi": {
+          "id": "vtzEyuhGOiGfFPxQ",
+          "name": "OpenAi account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Analyze image",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "8f0d5706-f33c-4900-970b-69f9e5f317ad",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "5051b5a6e931bc26377d55a46a7dc4c1ad409ab4ed8993f1df5078d5bad0ee24"
+  },
+  "id": "Rm8XwI9GE9LQDm_Z6Cis0",
+  "tags": []
+}
