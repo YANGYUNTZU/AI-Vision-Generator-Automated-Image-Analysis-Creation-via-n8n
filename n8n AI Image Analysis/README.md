@@ -37,3 +37,9 @@ graph LR
     A[🗨️ Chat Trigger<br/>+ Image Upload] -- "Binary Data" --> B[🤖 Analyze Image<br/>OpenAI GPT-4o-MINI]
     B --> C[📝 Text Analysis Result]
 ```
+## 📸 執行截圖範例
+
+![工作流配置](../images/analysis_node.png)
+![OpenAI 設定](../images/analysis_openai_setting.png)
+![聊天訊息設定](../images/analysis_chat_message_setting.png)
+
