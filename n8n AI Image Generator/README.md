@@ -34,5 +34,3 @@
 graph LR
     A[🗨️ When chat message received] -- "chatInput" --> B[🤖 Generate an image<br/>OpenAI DALL-E 3]
     B --> C[🖼️ Image Output<br/>PNG Data]
-
-## 📸 執行範例
