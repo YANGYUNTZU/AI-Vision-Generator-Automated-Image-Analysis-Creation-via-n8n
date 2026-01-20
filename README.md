@@ -21,6 +21,9 @@
 1. 確保你已安裝並運行 [n8n]。
 2. 準備相關 AI 平台的 API Keys (OpenAI, Anthropic 等)。
 
+### 設定憑證 (Credentials)
+* **OpenAI API**：用於驅動 AI Agent 進行推理。
+
 ## 📂 專案結構
 ```text
 .
